@@ -65,27 +65,39 @@ const resetGame = () => {
 
       const drawHangman = () => {
         if (numberOfGuesses === 6) {
-          console.log(`\nt'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(
+            `\nT'es un vrai, toujours avec ${numberOfGuesses} essaies le sang.`
+          );
         } else if (numberOfGuesses === 5) {
           console.log(`\n O \n\n\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(
+            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+          );
         } else if (numberOfGuesses === 4) {
           console.log(`\n O \n | \n\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(
+            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+          );
         } else if (numberOfGuesses === 3) {
           console.log(`\n O \n/| \n\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(
+            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+          );
         } else if (numberOfGuesses === 2) {
           console.log(`\n O \n/|\\\n\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(
+            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+          );
         } else if (numberOfGuesses === 1) {
           console.log(`\n O \n/|\\\n/\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(
+            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+          );
         } else if (numberOfGuesses === 0) {
           console.log(`\n O \n/|\\\n/ \\\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} le sang.`);
+          console.log(`t'as mal devine ${numberOfGuesses} essaies le sang.`);
         }
-        console.log(`t'as devine ${alreadyGuessedLetters}.\n`);
+        console.log(`t'as devine ${alreadyGuessedLetters} lettres.\n`);
       };
 
       drawHangman();
