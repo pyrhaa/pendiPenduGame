@@ -1,5 +1,4 @@
 const prompt = require('readline-sync');
-// const Lettre = require('./lettre');
 const randomWord = require('./randomWord.json');
 const chalk = require('chalk');
 
