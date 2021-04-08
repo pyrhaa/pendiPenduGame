@@ -25,7 +25,7 @@ const resetGame = () => {
 
     console.log(
       chalk.blue(
-        '\nBienvenu sur Pendi le Pendu!\nAppuyez sur ctrl+c pour Stop\n'
+        '\nBienvenue sur Pendi le Pendu!\nAppuyez sur ctrl+c pour Stop\n'
       )
     );
 
@@ -69,35 +69,39 @@ const resetGame = () => {
             `\nT'es un vrai, toujours avec ${numberOfGuesses} essaies le sang.`
           );
         } else if (numberOfGuesses === 5) {
-          console.log(`\n O \n\n\n`);
           console.log(
-            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+            `   ||\n   ||\n   ||\n   ||\n   ||\n   ||\n  /||\n //||\n============`
           );
+          console.log(`Reste ${numberOfGuesses} essaies le sang.`);
         } else if (numberOfGuesses === 4) {
-          console.log(`\n O \n | \n\n`);
           console.log(
-            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+            `,==============\n   ||  /\n   || /\n   ||/\n   ||\n   ||\n   ||\n  /||\n //||\n============`
           );
+          console.log(`Reste ${numberOfGuesses} essaies le sang.`);
         } else if (numberOfGuesses === 3) {
-          console.log(`\n O \n/| \n\n`);
           console.log(
-            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+            `,==========Y===\n   ||  /   |\n   || /    |\n   ||/\n   ||\n   ||\n   ||\n  /||\n //||\n============`
           );
+          console.log(`Reste ${numberOfGuesses} essaies le sang.`);
         } else if (numberOfGuesses === 2) {
-          console.log(`\n O \n/|\\\n\n`);
           console.log(
-            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+            `,==========Y===\n   ||  /   |\n   || /    |\n   ||/     O\n   ||\n   ||\n   ||\n  /||\n //||\n============`
           );
+          console.log(`Reste ${numberOfGuesses} essaies le sang.`);
         } else if (numberOfGuesses === 1) {
-          console.log(`\n O \n/|\\\n/\n`);
           console.log(
-            `t'as mal devine, reste ${numberOfGuesses} essaies le sang.`
+            `,==========Y===\n   ||  /   |\n   || /    |\n   ||/     O\n   ||     /|\\\n   ||\n   ||\n  /||\n //||\n============`
+          );
+          console.log(
+            `T'ES DANS LA HESS ! Reste ${numberOfGuesses} essaies le sang.`
           );
         } else if (numberOfGuesses === 0) {
-          console.log(`\n O \n/|\\\n/ \\\n`);
-          console.log(`t'as mal devine ${numberOfGuesses} essaies le sang.`);
+          console.log(
+            `,==========Y===\n   ||  /   |\n   || /    |\n   ||/     O\n   ||     /|\\\n   ||      |\\\n   ||\n  /||\n //||\n============`
+          );
+          console.log(`Reste ${numberOfGuesses} essaies le sang.`);
         }
-        console.log(`t'as devine ${alreadyGuessedLetters} lettres.\n`);
+        console.log(`lettres d'jà cramée: ${alreadyGuessedLetters}\n`);
       };
 
       drawHangman();
